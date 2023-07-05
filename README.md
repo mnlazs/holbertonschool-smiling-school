@@ -1,113 +1,51 @@
 <div align="center">
-  <img src="images/bootstrap.png" align="center" width="300" style="margin: 5px;"/>
+  <img src="images/bootstrap.png" align="center" width="700" style="margin: 5px;"/>
 </div>
 
 # README [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
 
-## Resources:books:
-Read or watch:
-* [Sass Basics](https://sass-lang.com/guide)
-* [Sass flow control directives: @if, @for, @each and @while](https://sass-lang.com/documentation//at-rules/control)
-* [Sass references](https://sass-lang.com/documentation/)
 ---
 
-## Learning Objectives:bulb:
+## Requirements 📌
 
-- What Sass means
-- How to write Sass & Scss file
-- What is the difference between Sass and Scss
-- What is the Sass preprocessing
-- How to declare a variable
-- How to use nested definition
-- How to import a Sass file
-- How to use mixins
-- How to declare extend/inheritance styles
-- How to manipulate operators
+You have to use Bootstrap
+Your styles.css must be as small as you can - you must use as much as you can Bootstrap classes
+
+# Imports 🔦
+For this project, you will need: fonts from Google, JQuery, Bootstrap CSS/JS
+
+```
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+```
 ---
+# Bootstrap
 
-## Requirements
-### General
-- Allowed editors: vi, vim, emacs
-- All your files will be executed on Ubuntu 18.04 LTS using Sass 3.7.4 (or higher)
-- All your files should end with a new line
-- All your Scss files should have a comment at the beginning (i.e. syntax above)
-- All your files should start by a comment describing the task
-- A README.md file, at the root of the folder of the project, is mandatory
-- The length of your files will be tested using wc
+Bootstrap is an open-source web development framework that makes it easy to create responsive and visually appealing websites and mobile applications. It provides a set of tools and predefined CSS styles that allow developers to quickly and easily build user interfaces.
 
----
+Some key features of Bootstrap include:
 
-## 1. What Sass means
-Sass stands for "Syntactically Awesome Style Sheets." It is a preprocessor scripting language that is interpreted or compiled into CSS. Sass adds functionality and features to CSS, making it easier to write and maintain stylesheets.
+### Flexible and responsive grid 
+Bootstrap uses a 12-column grid system that automatically adapts to different devices and screen sizes. This makes it easy to create flexible and responsive layouts that adjust to any device, from mobile phones to desktop computers.
 
-## 2. How to write Sass & Scss files
-Sass files have the extension ".sass," and SCSS files have the extension ".scss." SCSS is a newer syntax introduced in Sass 3, and it is more similar to CSS syntax. To write Sass or SCSS, you need a text editor or an Integrated Development Environment (IDE). Simply create a new file with the respective extension and start writing Sass or SCSS code.
+### Customizable components
+Bootstrap offers a wide variety of reusable components such as buttons, navigation bars, forms, carousels, and more. These components are fully customizable and can be easily tailored to meet the design needs of each project.
 
-## 3. What is the difference between Sass and Scss
-The main difference between Sass and SCSS is the syntax. Sass uses an indented syntax without curly braces and semicolons, while SCSS uses a syntax that is closer to CSS with curly braces and semicolons. SCSS is more popular and widely used as it feels more familiar to developers transitioning from CSS.
+### Predefined styles and themes
+Bootstrap provides a range of predefined styles and themes that allow developers to create visually appealing interfaces. Styles include typography options, colors, animation effects, and more. Additionally, it is possible to customize the styles according to specific project requirements.
 
-## 4. What is Sass preprocessing
-Sass preprocessing refers to the step where Sass code is compiled into regular CSS code. This process is handled by a Sass compiler or preprocessor, which takes the Sass or SCSS files as input and generates a CSS file as output. Preprocessing allows developers to use features like variables, nesting, mixins, and more, which are not directly supported in standard CSS.
+### Interactive JavaScript
+Bootstrap includes a range of JavaScript plugins and utilities that facilitate interactivity on the website. These include dropdowns, modal pop-ups, image sliders, form validation, and more. These interactive elements can be easily added using Bootstrap's API.
 
-## 5. How to declare a variable
-In Sass, you can declare variables to store values that can be reused throughout your stylesheets. To declare a variable, use the `$` symbol followed by the variable name and assign a value to it. Here's an example:
+### Cross-browser compatibility
+Bootstrap has been developed with compatibility in mind for different modern web browsers, ensuring that websites and applications built with Bootstrap render correctly in most popular browsers.
 
-```scss
-$primary-color: #ff0000;
-```
-
-In this example, the variable `$primary-color` is assigned the value `#ff0000`, which represents a red color.
-
-## 6. How to use nested definitions
-Sass allows you to nest your CSS rules within one another, providing a more structured and readable way of writing styles. To use nested definitions, simply nest the child selector inside the parent selector. Here's an example:
-
-```scss
-.navbar {
-  background-color: #f0f0f0;
-  padding: 10px;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-  }
-}
-```
-
-In this example, the styles for the nested `ul` and `li` elements are scoped within the `.navbar` selector.
-
-## 7. How to import a Sass file
-To import a Sass file into another Sass file, use the `@import` directive followed by the path to the file you want to import. Here's an example:
-
-```scss
-@import 'variables';
-@import 'layout';
-```
-
-In this example, the Sass files "variables.scss" and "layout.scss" are imported into the current Sass file. Make sure to omit the file extension in the import statement.
-
-## 8. How to use mixins
-Mixins in Sass allow you to define reusable blocks of styles that can be included in multiple selectors. To create a mixin, use the `@mixin` directive followed by the mixin name and its styles. Here's an example:
-
-```scss
-@mixin button-styles {
-  background-color: #ff0000;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-}
-
-.button {
-  @include button-styles;
-}
-```
-
-In this example, the `button-styles` mixin is defined with a set of styles, and it is included within the `.button`
 
 ## Author
 - **Manuel Zambrano** - [mnlazs](https://github.com/mnlazs) :rage4:
